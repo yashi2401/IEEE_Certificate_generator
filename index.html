@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="assests\img\favicon.png" type="image/png">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Get Your Certificate</title>
+</head>
+<body>
+  <canvas id="canvas1"></canvas>
+
+   <div class="container">
+    <div class="loading" id="loading"></div>
+    <h1 class="mobile">Open desktop to generate the Certificate</h1>
+    <canvas class="canvas" id="canvas" width="1080" height="720"></canvas>
+     <div class="login-container" id="login-container">
+       <form  action="index.html">
+         <div class="logoclass">
+         <a href="https://ieeeadgitm.com/"><img class="logo" src="ieeelogo.png" alt=""></a>
+
+         </div>
+         <h2 style="	font-family: 'Playlist Script';
+	src: url('Playlist Script.otf'); "  class="text">Congratulations !</h2>
+         <div class="input-div">
+            <!-- <div class="i">
+              <p>Choose the event:</p>
+            </div> -->
+            <div class="chooseEvent">
+              <select class="event" name="event" id="event" >
+
+               <option value="default" selected><p class="chooseEvent">Choose the Event </p></option>
+
+              </select>
+            </div>
+         </div>
+         <div id="hidBox">
+          <div class="input-div one" >
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Registered Name</h5>
+              <input class="input" type="text" id="name"/>
+              <p id="message"></p>
+            </div>
+          </div>
+          <div class="input-div two">
+            <div class="i">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h5>Registered Email</h5>
+              <input class="input" type="email" id="emailID"/>
+              <p id="meesage"></p>
+            </div>
+          </div>
+          <button type="button" class="btn" id="btn" name="button" onClick='submitDetails();'>Get Your Certificate</button>
+          <p>Facing any Problem? <a href="mailto: ieeeniec123@gmail.com">Click Here</a></p>
+         </div>
+       </form>
+     </div>
+     <!-- <div class="btnCenter" id="btnCenter">
+      <button type="button" class="btn" id="btn" name="button" onClick='download_image();'>Download</button>
+     </div>      -->
+   </div>
+
+   <script src="particle.js"></script>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</body>
+</html>
