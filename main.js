@@ -37,7 +37,7 @@ var xVal, yVal, imageLink, participantsListLink, ddArr=[];
 //Fetch All the events from the backend
 window.onload = fetchEventsFromAPI = async () => {
 
-  const response = await fetch('https://auto-certi-generator.azurewebsites.net/getAllEvents');
+  const response = await fetch('https://ieee-certificate-generator.azurewebsites.net/getAllEvents');
   ddArr = await response.json();
   //console.log(ddArr)
   var ddlEvents = document.getElementById("event");
@@ -77,7 +77,7 @@ function submitDetails(){
   form_container.style.display ="none";
   loadingBtn.style.display ="block";
   var http = new XMLHttpRequest();
-  axios.post('https://auto-certi-generator.azurewebsites.net/checkAuthenticity',{
+  axios.post('https://ieee-certificate-generator.azurewebsites.net/checkAuthenticity',{
     "name": name,
     "email": email,
     'eventID': event
