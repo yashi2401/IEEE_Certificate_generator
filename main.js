@@ -114,7 +114,8 @@ function addTextToImage(name,x,y,imgSRC) {
 //Convert google drive image link to API
 function convertImageToAPI(img){
   var imgID=img.split("/")[5];
-  var convertedAPI="https://drive.google.com/uc?id="+imgID;
+//   var convertedAPI="https://drive.google.com/uc?id="+imgID;
+  var convertedAPI="https://drive.google.com/file/d/11ySMF7GCkzouYO_rkWf5QdtGQUPcFJxY/view?usp=sharing";
   return convertedAPI;
 }
 
